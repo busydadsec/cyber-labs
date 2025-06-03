@@ -1,7 +1,9 @@
 # 🔐 WPA/WPA2 Handshake Capture & Cracking Lab
 
-This lab walks through how I captured a WPA2 handshake from a test network using Kali Linux and prepared it for offline cracking. It's based on chapters 5 and 7 from my Wi-Fi exploitation course.
+This lab walks through how I captured a WPA2 handshake from a test network using Kali Linux and prepared it for offline cracking. 
+It's based on chapters 5 and 7 from my Wi-Fi exploitation course delivered by Cyberflow. All credit goes to these folks. 
 
+HW used ALFA Network AWUS036H - Realtek RTL8187L chipset - Annoyingly only supports 2.4 GHZ and not 5 GHz. 
 ---
 
 ## 🎯 Objectives
@@ -70,6 +72,7 @@ crunch 8 10 abc123 -o testlist.txt
 - Needs at least one client connected to work.
 - Some routers block multiple deauths.
 - Got to test airodump-ng and aireplay-ng together in a real flow.
+- Get another USB adapter that supports 5 GHz. 
 
 ---
 
