@@ -9,3 +9,8 @@ If you want to kill any interfering processes, such as wpa_supplicant, use airmo
 sudo airmon-ng start wlan0
 sudo airmon-ng stop wlan0mon - It will rename the interface to mon
 
+WEP Cracking Basics 
+
+-Packet sniff and dump into a file. 
+airodump-ng --bssid <MAC Address of target> --channel <channel number of target> --write <filename> <interface ID YOU are using>
+
