@@ -20,24 +20,24 @@ The ongoing means I haven't finished yet, but I am getting there.
 - Permissions and intents
 - Activities, services, content providers
 
-### 🧪 Static Analysis (Ongoing)
+### 🧪 Static Analysis **(Ongoing)**
 - Tools: `JADX`, `MobSF`, `apktool`
 - Reading decompiled code to locate:
   - Hardcoded secrets
   - Insecure configurations
   - Broken auth logic
 
-### 🌀 Dynamic Analysis (Ongoing)
+### 🌀 Dynamic Analysis **(Ongoing)**
 - Proxying traffic through `Burp Suite`
 - Certificate pinning bypass techniques
 - Frida + Objection for runtime analysis
 
-### 🔐 API and Token Security (Ongoing)
+### 🔐 API and Token Security **(Ongoing)**
 - Understanding `JWT` and token-based auth
 - Enumerating insecure endpoints
 - Session fixation and token leakage
 
-### 📱 Android Device Exploitation (Ongoing) 
+### 📱 Android Device Exploitation **(Ongoing) **
 - ADB basics: shell access, logcat, sideloading
 - APK signing and repacking
 - Local data extraction (SQLite, shared prefs)
@@ -54,10 +54,8 @@ The ongoing means I haven't finished yet, but I am getting there.
 
 ## 🔄 What I’m Working On Next
 
-- Deeper Frida scripting
-- Custom payload testing in Burp Repeater
-- Writing Python tools to automate APK scanning
-- Connecting theory to real-world examples from LE/intel perspective
+-Finishing the full course
+-Prepping for exam (not the end of the world. Although I probably should.)
 
 ---
 
@@ -65,7 +63,7 @@ The ongoing means I haven't finished yet, but I am getting there.
 
 - Static analysis gives an early look, but dynamic testing reveals the real issues.
 - Many mobile apps fail on basic API protection, even those used by major brands.
-- Android’s openness makes it ideal for learning, but also a huge attack surface. But then again, if iOS is exploited, it pretty much means they can all be exploited so..... a little from column A and a little from column B.
+- Android’s openness makes it ideal for learning, but also a huge attack surface. But then again, if iOS is exploited, it pretty much means they can all be exploited, so..... a little from column A and a little from column B.
 - Linking teleco metadata and mobile behaviour is an underrated skillset in threat hunting.
 
 ---
@@ -73,15 +71,6 @@ The ongoing means I haven't finished yet, but I am getting there.
 ## ⚠️ Disclaimer
 
 These notes reflect personal study and learning in a safe lab setting. All testing is ethical and does not involve any unauthorised access to systems or data. Just behave yourself.
-
----
-
-
----
-
-## ⚠️ Disclaimer
-
-These notes reflect personal study and learning in a safe lab setting. All testing is ethical and does not involve any unauthorised access to systems or data.
 
 ---
 
