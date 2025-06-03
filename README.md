@@ -4,8 +4,8 @@
 
 Welcome to my personal cybersecurity and wireless exploitation lab.
 
-I'm an intelligence analyst with a background in telecom engineering and complex criminal investigations. 
-This repo documents my learning journey as I transition deeper into hands-on technical capabilities — including Wi-Fi exploitation, SDR (HackRF), mobile forensics, and Android app testing.
+I'm an analyst with a background in telecom engineering and complex criminal investigations. 
+This repo documents my learning journey as I transition deeper into hands-on technical capabilities, including Wi-Fi exploitation, SDR (HackRF), mobile forensics, and Android app testing.
 
 ---
 
