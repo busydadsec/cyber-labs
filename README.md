@@ -35,7 +35,8 @@ This repo documents my learning journey as I transition deeper into hands-on tec
 
 ## 🖼️ Visual Aids
 
-- ![PMPA Mind Map](./screenshots/pmpa_mindmap.png)
+[🧠 View PMPA Mind Map](https://raw.githubusercontent.com/busydadsec/cyber-labs/main/PMPA_mindmap.png)
+
 
 Includes a visual breakdown of PMPA concepts, attack vectors, and Android internals.
 
