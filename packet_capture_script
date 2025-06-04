@@ -1,0 +1,7 @@
+#!/bin/bash
+BSSID="AA:BB:CC:DD:EE:FF"
+CHANNEL="6"
+INTERFACE="wlan0"
+
+sudo iwconfig $INTERFACE channel $CHANNEL
+sudo airodump-ng --bssid $BSSID --channel $CHANNEL -w capture $INTERFACE
