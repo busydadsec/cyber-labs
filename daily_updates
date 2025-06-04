@@ -1,2 +1,12 @@
 04/06/2025 Today I finished the WPA2 lab and wrote a script to capture packets as I got fed up typing the commands. 
             Also covered WEP cracking don't have any devices that support WEP though so just the thoery.  
+            Within the WEP I used aircrack-ng on the .cap file and it found one potential target but no key found. 
+            You would normally IF there is a wep device connected a KEY FOUND and then the [ 11:22:33:44:55 ] which you would then remove the colons from the pwd and then you can connect to the wifi as this is the PWD without the colons. 
+            If there is not enough traffic, you can use a deauth attack to force the Access Point (AP) to communicate with me. 
+            So then we can associate with the AP 
+            sudo airodump-ng --bssid {MAC} --channel {#} --write [filename] [interfaceID]
+            Now I am capturing and now I associate by 
+            sudo aireplay-ng --fakeauth [0] (This is only do it once) -a [target network MAC] -h [my usb adapter MAC] (ifconfig first 12 digits and replace dash with colons.) [interface ID of USB adapter] 
+            This will force the AP to communicate with me. I am not connected at this point, I am just communicating with it.   
+            Now we run an ARP attack 
+            sudo aireplay-ng --arpreplay -b {target network MAC}  -h [my usb adapter MAC] [interface ID of USB adapter] 
