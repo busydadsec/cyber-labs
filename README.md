@@ -4,7 +4,7 @@
 
 Welcome to my personal cybersecurity and wireless exploitation lab.
 
-I'm an analyst with a background in telecom engineering and complex criminal investigations. 
+I'm an analyst with a background in telecom engineering. 
 This repo documents my learning journey as I transition deeper into hands-on technical capabilities, including Wi-Fi exploitation, SDR (HackRF), mobile forensics, and Android app testing.
 
 ---
@@ -44,11 +44,11 @@ Includes a visual breakdown of PMPA concepts, attack vectors, and Android intern
 
 ## 🚨 Ethics Notice
 
-All experiments are conducted in isolated lab environments for educational purposes only. Nothing here is intended for or used in unauthorised or unlawful activity at all ever. 
+All experiments are conducted in isolated lab environments for educational purposes only. Nothing here is intended for or used in unauthorised or unlawful activity, at all ever. 
 
 ---
 
 ## 👋 About This Profile
 
-This GitHub tracks my growth from intel analysis and telco engineering into full-spectrum digital operations — bridging RF, mobile forensics, and modern cyber techniques. 
+This GitHub tracks my growth from analysis and telco engineering into full-spectrum digital operations — bridging RF, mobile forensics, and modern cyber techniques. 
 
