@@ -7,7 +7,7 @@ sudo ip link set wlan0 up
 If you want to kill any interfering processes, such as wpa_supplicant, use airmon. 
 
 sudo airmon-ng start wlan0
-sudo airmon-ng stop wlan0mon - It will rename the interface to mon
+sudo airmon-ng stop wlan0 - It will rename the interface to mon
 
 WEP Cracking Basics 
 
