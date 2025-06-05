@@ -33,4 +33,10 @@ What's nice is that I hav ebeen doing abit of hobbying here and there since 2017
             Had a brain wave. I am going to use my old Android as an AP and hack that. Hurrah
 
             Also realised I have never done a RAM dump, so signed up for try hack me for the windows RAM dump lab for unstrucured data analysis. 
+
+            Whats interesting is that if WPS is disabled on the target network or WPS is enabled but uses Push Button (PBC) the method I just did won't work. 
+            The only packets that contain useful info is the handshake packets
+            airodump-ng then 
+            whoops broke my VM completley going to reinstall and fix the VM tomorrow. 
+            
             
