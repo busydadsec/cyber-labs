@@ -1,3 +1,8 @@
+I have been studying this subject for a few weeks now, but now I am filling out a github. Mianly for my own use but also to evidence my learning journey. 
+What's nice is that I hav ebeen doing abit of hobbying here and there since 2017, so I already had a wireless USB adapter router and am use to kali linux.
+
+
+
 04/06/2025 Today I finished the WPA2 lab and wrote a script to capture packets as I got fed up typing the commands. 
             Also covered WEP cracking don't have any devices that support WEP though so just the thoery.  
             Within the WEP I used aircrack-ng on the .cap file and it found one potential target but no key found. 
@@ -14,3 +19,8 @@
             Then I can aircrack it 
             aircrack-ng [filename .cap] 
             KEY FOUND [ PWD remove colons] 
+
+
+05/06/2025 Today, I am redoing my WPA/WPA2 cracking lab as it's important.  
+            sudo wash --interface [my interface] 
+            
