@@ -67,12 +67,33 @@ What's nice is that I hav ebeen doing abit of hobbying here and there since 2017
             Can also use existing wordlists. 
 
             So you need to capture handshake and have a pre-prepared wordlist. 
+            
             How Aircrack-ng works
             Extracts the MIC (Message Integrity Code) 
             Tries each PWD from the wordlist (duh)
             Generates a new MIC and compares it with the original
             If they match, we have the PWD! Hurrah 
+
+            sudo aircrack-ng wpa_handshake_AndroidAP-01.cap -w test.txt
+            should only take 200 days (that's fine)
+            hmm maybe not lets make it smarter. Its running so lets add the real PWD and reduce the size to actually crack it. 
+            
+            so created a much smaller one 
+            crunch 8 8 abc12 -o test2.txt -t a@@@@@@b 
+            This created a much smaller file and now I will leafpad the text file and add the password to test if this has worked. 
+            
+            leafpad test2.txt
+            
+            so let's test without taking six months. 
+            OH now it will take 145 days. So now I have put the PWD at the fifth line ain't nobody got time for this. 
+
+            KEY FOUND! [AndroidAP Key ;)] 
+
+            Wordlist attacks are currently the only know methood for cracking wpa2 but there are methods using your GPU or online service (not going to do that) in order to speed it up. 
+
+            Ok cool it works now onto the next subject which is network recon and post access methods. 
             
 
+            
             
             
