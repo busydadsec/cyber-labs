@@ -90,10 +90,31 @@ What's nice is that I hav ebeen doing abit of hobbying here and there since 2017
             KEY FOUND! [AndroidAP Key ;)] 
 
             Wordlist attacks are currently the only know methood for cracking wpa2 but there are methods using your GPU or online service (not going to do that) in order to speed it up. 
+            You could use evil-twin attacks to get a user to send you their password, but this will be covered later. 
+            Quiz time. 92% not bad
+            Ok cool it works now onto the next subject, which is network recon and post access methods. 
 
-            Ok cool it works now onto the next subject which is network recon and post access methods. 
-            
+            nMap (nice ;)
+            I should read the book on nMap
+            ZenMap
 
-            
+            Covered quick scans and ping scans. Simple but useful 
+            quick scan plus 
+            The Quick Scan Plus shows way more info, including software connecting etc
+            Services are interesting in the scan. 
+            If you see an SSH service ou need a login/pwd iOS devioce by default do not have an SSH server. But when you jailbreak an iphone it automatically installs an ssh server.
+            The default PWD for this SSH server is alpine. Not many people know this about jailbroken iOS phones so this is a good way to access an iphone because even those who know most of the time are too lazy to change this PWD. 
+            Port 22 SSH server. 
+
+            ssh root@[IP of phone]
+            password:alpine
+            You're in as root :)
+
+            quiz time. 92% not bad 
+
+            Going to stop for now have to look after little man. 
+            Done with wifi hacking for now going to move back to PMPA for a bit and start RF once my hackrf one arrives which should be this evening fingers crossed. 
+
+
             
             
