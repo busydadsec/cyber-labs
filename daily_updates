@@ -40,5 +40,39 @@ What's nice is that I hav ebeen doing abit of hobbying here and there since 2017
             whoops broke my VM completley going to reinstall and fix the VM tomorrow. 
 
 06/06/2025 Another day in paradise. WPA/WPA2 will be done today as my VM broke (well done) and I have now restored it, hurrah. OK lets document the WPA2 handshake lab proper like. 
+            Handshake packets only please. So I have set up my andorid phone to be an AP 
+
+            sudo airodump-ng --bssid [AndroidAP MAC] --channel [ch of AP] --write [filename] wlan0
+
+            So I have connected my phone to the AP to capture the handshake, hopefully. 
+
+            If no one is connecting, you need to force a reconnect.
+
+            aireplayer-ng --deauth 4 -a [Target network MAC] -c [client MAC] wlan0 
+
+            I have the handshake now so going to crack. It doesn't carry the PWD. 
+            So we will create a wordlist/dictionary using crunch. 
+
+            Option            Description
+            Min/Max Length    Set PWD size
+            Char Set          Define allowed characters
+            Pattern (-t)      Generate based on known info
+            Output (-o)       Save wordlist to file
+            No Repeating (-p) Tells crunch to not repeat characters
+
+            crunch 6 8 abc12 -o text.txt
+            run this cmd and got 484375 lines 
+            crunch 7 7 abc12 -o text.txt -t a@@@@b (this create PWD's based on anything possible from a to b)
+            Reduced it to 625 pwd's. 
+            Can also use existing wordlists. 
+
+            So you need to capture handshake and have a pre-prepared wordlist. 
+            How Aircrack-ng works
+            Extracts the MIC (Message Integrity Code) 
+            Tries each PWD from the wordlist (duh)
+            Generates a new MIC and compares it with the original
+            If they match, we have the PWD! Hurrah 
+            
+
             
             
