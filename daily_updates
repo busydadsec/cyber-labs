@@ -85,11 +85,11 @@ What's nice is that I hav ebeen doing abit of hobbying here and there since 2017
             leafpad test2.txt
             
             so let's test without taking six months. 
-            OH now it will take 145 days. So now I have put the PWD at the fifth line ain't nobody got time for this. 
+            OH now it will take 145 days. So now I have put the PWD at the fifth line, ain't nobody got time for this. 
 
             KEY FOUND! [AndroidAP Key ;)] 
 
-            Wordlist attacks are currently the only know methood for cracking wpa2 but there are methods using your GPU or online service (not going to do that) in order to speed it up. 
+            Wordlist attacks are currently the only know methood for cracking wpa2, but there are methods using your GPU or online service (not going to do that) in order to speed it up. 
             You could use evil-twin attacks to get a user to send you their password, but this will be covered later. 
             Quiz time. 92% not bad
             Ok cool it works now onto the next subject, which is network recon and post access methods. 
@@ -100,27 +100,30 @@ What's nice is that I hav ebeen doing abit of hobbying here and there since 2017
 
             Covered quick scans and ping scans. Simple but useful 
             quick scan plus 
-            The Quick Scan Plus shows way more info, including software connecting etc
+            The Quick Scan Plus shows way more info, including software connecting, etc
             Services are interesting in the scan. 
-            If you see an SSH service ou need a login/pwd iOS devioce by default do not have an SSH server. But when you jailbreak an iphone it automatically installs an ssh server.
-            The default PWD for this SSH server is alpine. Not many people know this about jailbroken iOS phones so this is a good way to access an iphone because even those who know most of the time are too lazy to change this PWD. 
+            If you see an SSH service, you need a login/pwd. iOS device by default does not have an SSH server. But when you jailbreak an iphone it automatically installs an ssh server.
+            The default PWD for this SSH server is alpine. Not many people know this about jailbroken iOS phones, so this is a good way to access an iPhone because even those who know most of the time are too lazy to change this PWD. 
             Port 22 SSH server. 
 
             ssh root@[IP of phone]
-            password:alpine
+            password: alpine
             You're in as root :)
 
-            quiz time. 92% not bad 
+            Quiz time. 92% not bad 
 
-            Going to stop for now have to look after little man. 
-            Done with wifi hacking for now going to move back to PMPA for a bit and start RF once my hackrf one arrives which should be this evening fingers crossed. 
+            Going to stop for now, have to look after little man. 
+            Done with wifi hacking for now, going to move back to PMPA for a bit and start RF once my hackrf one arrives, which should be this evening, fingers crossed. 
 
 
-07/06/2025  Birthday weekend so will only do labs today out tomorrow with freinds. Not so daily after all I guess. 
-            Anyway PMPA today practical lab work. Injured \Android is working lab setup theory done so going to make a new mind map for the PMPA practical skills.
+07/06/2025  Birthday weekend, so will only do labs today out tomorrow with friends. Not so daily after all, I guess. 
+            Anyway, PMPA today's practical lab work. Injured \Android is working lab setup theory done, so going to make a new mind map for the PMPA practical skills.
+
             My Hack RF one arrived but with no aerial so that arrives tomorrow which is anoying but at least my refresher on Wifi cracking is done and I can get some PMPA done before going out tomorrow. 
-            OK so Androidmanifest.xml 
-            I will write a full file on this and a mindmap. I have completed the theory for manual static analysis and a basic mindmap including using apktool JADX and how to find hardcoded strings. 
-            Next I will cover Injured Andorid Static Anlysis Flags 1 to 4. I will be switching between static analysis PMPA and a basic RF SDR hacking course once my antenna arrives. 
+
+            OK so Androidmanifest.xml added the full file with some notes understanding how it works and what to look out for. Also installed strings as I am using windows powershell.  
+            I will write a full file on this and a mindmap. I have completed the theory for manual static analysis and a basic mindmap, including using apktool JADX and how to find hardcoded strings. 
+            Next, I will cover Injured Android Static Analysis Flags 1 to 4. I will be switching between static analysis PMPA and a basic RF SDR hacking course once my antenna arrives. 
+            I will need to write all this work up properly at some point into proper lab reports. 
             
             
