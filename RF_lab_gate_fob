@@ -1,8 +1,14 @@
 Got my Hack RF one working and using Airspy SDR# 
 Set my set the freq to 433.920.000 i.e 433MHZ
 I then caught the slightest signal from shown in the gate fob picture. 
+Now I have idenitfied the signal can be seen by my HackRF One I will now capture the signal
 
+.\hackrf_transfer.exe -r gatefob.iq -f 433920000 -s 2000000 -n 10000000
 
-!(https://raw.githubusercontent.com/busydadsec/cyber-labs/main/Gate_Fob.png)
+I did it twice just to make sure so I will now look at my second version gatefob1.iq 
 
+.\hackrf_transfer.exe -t gatefob.iq -f 433920000 -s 2000000 -x 47 THIS COMAND THEN BORADCASTS THE SIGNAL 
 
+So I have now decoded the signal using Universal Radio Hacker. It's FSK and the i have bitstream. 
+
+I am seeing the signal repeat over and over in the anlysis tab when seen as bits. No rolling signal here. 
