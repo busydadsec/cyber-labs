@@ -1,0 +1,118 @@
+Flag one COMPLETE
+
+FlagOneLoginActivity
+
+
+package b3nac.injuredandroid;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import androidx.appcompat.widget.Toolbar;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+
+/* loaded from: classes.dex */
+public final class FlagOneLoginActivity extends androidx.appcompat.app.c {
+    private int w;
+
+    static final class a implements View.OnClickListener {
+        a() {
+        }
+
+        @Override // android.view.View.OnClickListener
+        public final void onClick(View view) {
+            if (FlagOneLoginActivity.this.F() == 0) {
+                Snackbar X = Snackbar.X(view, "The flag is right under your nose.", 0);
+                X.Y("Action", null);
+                X.N();
+                FlagOneLoginActivity flagOneLoginActivity = FlagOneLoginActivity.this;
+                flagOneLoginActivity.G(flagOneLoginActivity.F() + 1);
+                return;
+            }
+            if (FlagOneLoginActivity.this.F() == 1) {
+                Snackbar X2 = Snackbar.X(view, "The flag is also under the GUI.", 0);
+                X2.Y("Action", null);
+                X2.N();
+                FlagOneLoginActivity.this.G(0);
+            }
+        }
+    }
+
+    public final int F() {
+        return this.w;
+    }
+
+    public final void G(int i) {
+        this.w = i;
+    }
+
+    @Override // androidx.appcompat.app.c, androidx.fragment.app.d, androidx.activity.ComponentActivity, androidx.core.app.e, android.app.Activity
+    protected void onCreate(Bundle bundle) {
+        super.onCreate(bundle);
+        setContentView(R.layout.activity_flag_one_login);
+        j.j.a(this);
+        C((Toolbar) findViewById(R.id.toolbar));
+        ((FloatingActionButton) findViewById(R.id.fab)).setOnClickListener(new a());
+    }
+
+    public final void submitFlag(View view) {
+        EditText editText = (EditText) findViewById(R.id.editText2);
+        d.s.d.g.d(editText, "editText2");
+        if (d.s.d.g.a(editText.getText().toString(), "F1ag_0n3")) {              "THE DEV WILL SOMETIMES COMPARE THE TEXT ENTERED INTO THE BOX TO A HARDCODED STRING. YOU CAN EXPLOIT THIS! COULD BE USERNAME PWD OR KEY UTILISED FOR A NETWORK CALL"
+            Intent intent = new Intent(this, (Class<?>) FlagOneSuccess.class);
+            new FlagsOverview().J(true);
+            new j().b(this, "flagOneButtonColor", true);
+            startActivity(intent);
+        }
+    }
+}
+
+
+Flag 2 
+
+
+</activity>
+        <activity android:name="b3nac.injuredandroid.XSSTextActivity"/>
+        <activity android:name="b3nac.injuredandroid.DisplayPostXSS"/>
+        <activity android:name="b3nac.injuredandroid.FlagOneSuccess"/>
+        <activity
+            android:name="b3nac.injuredandroid.b25lActivity"
+            android:exported="true"/> "YOU CAN SEE HERE IT SAYS EXPORTED=TRUE THIS MEANS WE CAN ACCESS THIS EXPORTEDF ACTIVITY FROM THE AB SHELL"
+        <activity
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/title_activity_flag_two"
+            android:name="b3nac.injuredandroid.FlagTwoActivity"/>
+        <activity
+
+so in the android studio start an adb shell
+
+PS C:\Users\benkl\AndroidStudioProjects\TestApp01> adb shell
+emu64xa:/ $ am start (this means to start an activity
+emu64xa:/ $ am start 
+
+ <activity
+            android:name="b3nac.injuredandroid.b25lActivity" THIS IS THE ACTIVTY WE FOUND THAT IS EXPORTED SO WE WILL NOW PASTE IT INTO THE AM START TO EPLXOIT IT 
+            android:exported="true"/>
+        <activity
+
+emu64xa:/ $ am start b3nac.injuredandroid.b25lActivity
+emu64xa:/ $ am start b3nac.injuredandroid.b25lActivity
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] pkg=b3nac.injuredandroid.b25lActivity }
+Error: Activity not started, unable to resolve Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 xflg=0x4 pkg=b3nac.injuredandroid.b25lActivity }
+1|emu64xa:/ $
+DONT FORGET TO ADD A FORWARD SLASH BEFORE THE ACTUAL ACTIVITY DUH!
+
+1|emu64xa:/ $ am start b3nac.injuredandroid/.b25lActivity                                                                                                                                                                          
+Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=b3nac.injuredandroid/.b25lActivity }
+emu64xa:/ $
+
+INJURED ANDROID NOW SAYS S3c0nd_F1ag 
+
+This can be useful becasue if an exported actvity contains sensitive data it can then be activated and accessed. 
+
+
+
+
+
