@@ -14,3 +14,5 @@ To get this to work on my VM I need to put the victim machine into port forwardi
 echo 1 > /proc/sys/net/ipv4/ip_forward
 
 The victim wouldn't notice as they can sill browse the internet ect but all their packets are goin via my machine. 
+
+I have created an Ubuntu machine to be my victim machine. 
